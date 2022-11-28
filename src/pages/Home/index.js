@@ -1,6 +1,5 @@
 import React, {useRef} from 'react'
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import About from '../About';
 import Work from '../Work';
 import Contact from '../Contact';
