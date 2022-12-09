@@ -1,0 +1,55 @@
+a {
+    text-decoration: none;
+}
+.contact-page {
+    height: 90vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    .main {
+        display: flex;
+        // width: 100%;
+        // justify-content: space-between;
+        // align-items: center;
+        height: 80%;
+        .info-container {
+            width: 40%;
+            border: 2px solid #F68989;
+            border-radius: 7px;
+            margin: 90px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            .info {
+                width: 50%;
+            }
+            .mail {
+                background-color: #F68989;
+                color: #fff !important;
+                font-family: 'Roboto condensed';
+                text-decoration: none;
+                padding: 10px;
+                border-radius: 9px;
+            }
+        }
+        .img-container{
+            // width: 50%;
+            position: relative;
+            display: flex;
+            .hey-1{
+                position: absolute;
+                left: -30px;
+            }
+            .hey-2{
+                position: absolute;
+                left: 270px;
+                bottom: 0px;
+            }
+        }
+    }
+    .heading {
+        font-size: 60px;
+        font-family: 'Berkshire Swash', cursive;
+        color: #F68989;
+        text-align: center;
+        margin-top: 100px;
+    }
+}
