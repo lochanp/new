@@ -153,10 +153,15 @@
     }
     .name-container {
         color: #F68989;
-        font-weight: 400;
         .my-name {
             font-family: 'Berkshire Swash', cursive;
             font-size: 100px;
+        }
+        .info-text {
+            font-weight: 600;
+            letter-spacing: 1.3px;
+            font-size: 17px;
+            font-family: 'Roboto Condensed', sans-serif;
         }
     }
 }

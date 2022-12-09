@@ -5,11 +5,12 @@ const About = () => {
   return (
     <div className='about-section'>
       <div className='left-container'>
-        Hi, I am Lochan Potdar I am a Frontend developer. I have been working in this profile since the last 1.5 years.
+        <p>Hi, I am Lochan Potdar I am a Frontend developer based in Mumbai, Maharastra.<br/> I have been working as a Front-End Developer since the last 1.5 years.</p>
+        <p>I am well skilled in this profile and have experience working on multiple projects<br/> and websites meanwhile I work in a small scale Software Development company.</p>
       </div>
       <div className='right-container'>
-          <img src={Me} alt='profile'></img>
-          <img src={Me2} alt='profile'></img>
+          <img className='pic2' src={Me} alt='profile'></img>
+          <img className='pic1' src={Me2} alt='profile'></img>
       </div>
     </div>
   )
