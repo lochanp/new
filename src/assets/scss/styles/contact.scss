@@ -1,5 +1,6 @@
 a {
     text-decoration: none;
+    color: #fff;
 }
 .contact-page {
     height: 90vh;
@@ -20,14 +21,20 @@ a {
             justify-content: center;
             .info {
                 width: 50%;
+                font-size: 20px;
             }
             .mail {
                 background-color: #F68989;
                 color: #fff !important;
-                font-family: 'Roboto condensed';
+                font-family: 'Fugaz One', cursive;
                 text-decoration: none;
-                padding: 10px;
+                padding: 11px;
                 border-radius: 9px;
+                a {
+                    font-size: 19px;
+                    letter-spacing: 0.4px;
+                    font-weight: normal;
+                }
             }
         }
         .img-container{
@@ -36,13 +43,14 @@ a {
             display: flex;
             .hey-1{
                 position: absolute;
-                left: -30px;
+                left: 80px;
+                
             }
-            .hey-2{
-                position: absolute;
-                left: 270px;
-                bottom: 0px;
-            }
+            // .hey-2{
+            //     position: absolute;
+            //     left: 270px;
+            //     bottom: 0px;
+            // }
         }
     }
     .heading {

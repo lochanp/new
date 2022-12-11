@@ -13,7 +13,7 @@ const Contact = () => {
         </div>
         <div className='img-container'>
         <img className='hey-1' src={Hey1} alt=''></img>
-          <img className='hey-2' src={Hey2} alt=''></img>
+          {/* <img className='hey-2' src={Hey2} alt=''></img> */}
           
         </div>
       </div>
