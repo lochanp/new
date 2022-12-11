@@ -165,10 +165,27 @@
         }
     }
 }
-@media screen and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .menu-links {
+        display: none;
+    }
     .top-container {
+        height: 80vh;
+        .center-box {
+            .name-container {
+                .my-name {
+                    font-size: 30px;
+                }
+                .info-text {
+                    font-size: 14px;
+                }
+            }
+        }
         .bg-big {
-            display: none;
+            // display: none;
+            font-size: 100px;
+            left: -1190px;
+            top: 90px;
         }
         .name-container {
             text-align: center;

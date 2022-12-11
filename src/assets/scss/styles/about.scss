@@ -29,3 +29,16 @@
 
     }
 }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .about-section {
+        flex-direction: column;
+        .left-container {
+            margin: 0px;
+            width: 90%;
+
+        }
+        .right-container {
+            display: none;
+        }
+    }
+}
