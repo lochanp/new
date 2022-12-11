@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import SunIcon from '../assets/images/moon.png'
+
 
 const Navbar = () => {
   const [mouseEnter, setmouseEnter] = useState()

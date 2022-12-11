@@ -1,6 +1,5 @@
 import React from 'react'
 import Hey1 from '../../assets/images/hey.png'
-import Hey2 from '../../assets/images/hey1.png'
 
 const Contact = () => {
   return (
