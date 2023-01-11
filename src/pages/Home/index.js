@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-import { motion } from 'framer-motion';
+import { motion ,useElementScroll,useTransform} from 'framer-motion';
 import About from '../About';
 import Work from '../Work';
 import Contact from '../Contact';
@@ -7,18 +7,16 @@ import Navbar from '../../components/Navbar';
 
 const Home = () => {
   const cursor = useRef(null)
+  let {scrollYProgress} = useElementScroll();
+  let y = useTransform(scrollYProgress,[0,1],['0%','220%'])
   return (
     <div>
       <div className='custom-cursor' ref={cursor}></div>
       <div className='reveal'></div>
       <Navbar />
-      <div className='top-container'>
-        {/* <div className='menu-links'>
-          <Link to='/about' className='about-link'>ABOUT</Link>
-          <Link to='/work' className='work-link' href='/'>WORK</Link>
-          <Link to='/contact' className='contact-link' href='/'>CONTACT</Link>
-        </div> */}
+      <div  className='top-container'>
         <motion.p 
+          style={{y}}
           className='bg-big' 
           animate={{ x:1250 }}
           transition={{ duration: 3 }}>

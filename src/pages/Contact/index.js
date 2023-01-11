@@ -1,9 +1,14 @@
 import React from 'react'
 import Hey1 from '../../assets/images/hey.png'
+import { motion ,useElementScroll,useTransform} from 'framer-motion';
 
 const Contact = () => {
+
+  let {scrollYProgress} = useElementScroll();
+  let y = useTransform(scrollYProgress,[0,1],['0%','30%'])
+
   return (
-    <div className='contact-page'>
+    <motion.div style={{y}} id='contact' className='contact-page'>
       <p className='heading'>Interested in working with me?</p>
       <div className='main'>
         <div className='info-container'>
@@ -16,7 +21,7 @@ const Contact = () => {
           
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
