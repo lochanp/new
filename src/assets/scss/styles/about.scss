@@ -18,13 +18,15 @@
         height: 100%;
         .pic1 {
             position: absolute;
-            top: -40px;
+            // top: 50px;
             left: -20px;
         }
         .pic2 {
             position: absolute;
-            bottom:14px ;
+            bottom: 50px ;
             right: 40px;
+            width: 400px;
+            height: 400px;
         }
 
     }

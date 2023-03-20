@@ -11,7 +11,7 @@ const About = () => {
   return (
     <motion.div id="about" style={{y}} className='about-section'>
       <div className='left-container'>
-        <p>Hi, I am Lochan Potdar I am a Frontend developer based in Mumbai, Maharashtra.<br/> I have been working as a Front-End Developer since the last 1.5 years.</p>
+        <p>Hi, I am Lochan Potdar I am a Frontend developer based in Mumbai, Maharashtra.<br/> I have been working as a Front-End Developer since the last 2 years.</p>
         <p>I am well skilled in this profile and have experience working on multiple projects<br/> and websites meanwhile I work in a small scale Software Development company.</p>
       </div>
       <div className='right-container'>
@@ -22,4 +22,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;

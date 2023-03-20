@@ -8,7 +8,7 @@ import Navbar from '../../components/Navbar';
 const Home = () => {
   const cursor = useRef(null)
   let {scrollYProgress} = useElementScroll();
-  let y = useTransform(scrollYProgress,[0,1],['0%','220%'])
+  let y = useTransform(scrollYProgress,[0,1],['0%','380%'])
   return (
     <div>
       <div className='custom-cursor' ref={cursor}></div>

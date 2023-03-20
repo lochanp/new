@@ -89,7 +89,7 @@
         z-index:2;
         position: absolute;
         font-size: 30px;
-        color: #fbd6d260;
+        color: var(--pinkish-grey);
         font-family: 'Fugaz One', cursive;
         text-decoration: none;
     }
@@ -97,26 +97,26 @@
         left: 190px;
         top: 50px;
         transform: scale(1);
-        color: #fbd6d260;
+        color: var(--pinkish-grey);
         transition: 3s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     .work-link {
         right: 170px;
         top: 80px;
         transform: scale(1);
-        color: #fbd6d260;
+        color: var(--pinkish-grey);
         transition: 3s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     .contact-link {
         left: 440px;
         bottom:100px;
         transform: scale(1);
-        color: #fbd6d260;
+        color: var(--pinkish-grey);
         transition: 3s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     .hovered {
         transform: scale(2.5);
-        color: #F68989;
+        color: var(--dark-pink);
         transition: 4s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     // .about-link:hover,
@@ -128,13 +128,13 @@
 }
 .top-container {
     background-color: #fff;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     // align-items: flex-start;
     justify-content: center;
     .bg-big {
-        color: #fbd6d260;
+        color: var(--pinkish-grey);
         font-size: 500px;
         position: absolute;
         left: -1120px;
@@ -152,7 +152,7 @@
         justify-content: center;
     }
     .name-container {
-        color: #F68989;
+        color:var(--dark-pink);
         .my-name {
             font-family: 'Berkshire Swash', cursive;
             font-size: 100px;
@@ -194,4 +194,42 @@
             }
         }
     }
+}
+
+.glassmorphism {
+    height: 80vh;
+    width: 90%;    
+    background: rgba(241, 124, 119, 0.44);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(241, 124, 119, 0.3);
+    z-index: 10000;
+    position: relative;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    .under-con-text {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 20px;
+    }
+    .coming-soon-text {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 80px;
+        color: rgb(68, 56, 56);
+        font-weight: 500;
+        letter-spacing: -2px;
+        margin-top: 40px;
+    }
+}
+.in-progress {
+    .top-container {
+    position: absolute;
+    height: 100vh;
+    top: 0px;
+}
 }
