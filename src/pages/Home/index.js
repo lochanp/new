@@ -8,20 +8,18 @@ import Navbar from '../../components/Navbar';
 const Home = () => {
   const cursor = useRef(null)
   let {scrollYProgress} = useElementScroll();
-  let y = useTransform(scrollYProgress,[0,1],['0%','220%'])
+  let y = useTransform(scrollYProgress,[0,1],['0%','380%'])
   return (
-    <div>
-      <div className='custom-cursor' ref={cursor}></div>
-      <div className='reveal'></div>
-      <Navbar />
+    <div className='in-progress'>
+      <div className='glassmorphism'>
+        <p className='coming-soon-text'>Coming Soon..</p>
+        <p className='under-con-text'>Website Under Construction 🚧</p>
+      {/* <div className='custom-cursor' ref={cursor}></div> */}
+      {/* <div className='reveal'></div> */}
+      {/* <Navbar /> */}
+      </div>
       <div  className='top-container'>
-        <motion.p 
-          style={{y}}
-          className='bg-big' 
-          animate={{ x:1250 }}
-          transition={{ duration: 3 }}>
-            Hello
-        </motion.p>
+      <Navbar /> 
          <div className='center-box'>
             <motion.div  
               initial={{ opacity: 0 }}
@@ -34,9 +32,10 @@ const Home = () => {
             </motion.div>
           </div>
       </div>
+      {/* 
       <About />
       <Work />
-      <Contact />
+      <Contact /> */}
     </div>
   )
 }
