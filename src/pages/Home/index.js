@@ -1,5 +1,5 @@
 import React, {} from 'react'
-import { motion ,useElementScroll,} from 'framer-motion';
+import { motion } from 'framer-motion';
 // import About from '../About';
 // import Work from '../Work';
 // import Contact from '../Contact';
