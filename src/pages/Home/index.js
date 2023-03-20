@@ -1,14 +1,14 @@
-import React, {useRef} from 'react'
-import { motion ,useElementScroll,useTransform} from 'framer-motion';
-import About from '../About';
-import Work from '../Work';
-import Contact from '../Contact';
+import React, {} from 'react'
+import { motion ,useElementScroll,} from 'framer-motion';
+// import About from '../About';
+// import Work from '../Work';
+// import Contact from '../Contact';
 import Navbar from '../../components/Navbar';
 
 const Home = () => {
-  const cursor = useRef(null)
-  let {scrollYProgress} = useElementScroll();
-  let y = useTransform(scrollYProgress,[0,1],['0%','380%'])
+  // const cursor = useRef(null)
+  // let {scrollYProgress} = useElementScroll();
+  // let y = useTransform(scrollYProgress,[0,1],['0%','380%'])
   return (
     <div className='in-progress'>
       <div className='glassmorphism'>
