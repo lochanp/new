@@ -8,7 +8,7 @@ export const workData = [
     githubLink: 'https://github.com/lochanp/hotel-dashboard-project'
   },
   {
-    title: 'Article Summerizer',
+    title: 'Article Summarizer',
     imgUrl: '/article-summerizer.png',
     link: 'https://article-summarizer-ai-app.netlify.app',
     description: [''],
