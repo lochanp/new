@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
-import Hey1 from '../../assets/images/hey.png';
-import { motion, useElementScroll, useTransform } from 'framer-motion';
+
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 
