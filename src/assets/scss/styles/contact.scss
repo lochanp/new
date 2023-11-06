@@ -2,34 +2,52 @@ a {
     text-decoration: none;
     color: #fff;
 }
+
 .contact-page {
     height: 90vh;
     font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 100px;
+    background-color: var(--background-color);
+    z-index: 3;
+    position: relative;
+
+    .contact-form {
+        background-color: var(--contact-box-color) !important;
+    }
+
+    .contact-bg {
+        background-color: var(--background-color);
+    }
+
     .main {
         display: flex;
         // width: 100%;
         // justify-content: space-between;
         // align-items: center;
         height: 80%;
+
         .info-container {
             width: 40%;
-            border: 2px solid var(--dark-pink);
+            border: 2px solid var(--main-text-color);
             border-radius: 7px;
             margin: 90px;
             align-items: center;
             display: flex;
             justify-content: center;
+
             .info {
                 width: 50%;
                 font-size: 20px;
             }
+
             .mail {
-                background-color: var(--dark-pink);
+                background-color: var(--main-text-color);
                 color: #fff !important;
                 font-family: 'Fugaz One', cursive;
                 text-decoration: none;
                 padding: 11px;
                 border-radius: 9px;
+
                 a {
                     font-size: 19px;
                     letter-spacing: 0.4px;
@@ -37,15 +55,18 @@ a {
                 }
             }
         }
-        .img-container{
+
+        .img-container {
             // width: 50%;
             position: relative;
             display: flex;
-            .hey-1{
+
+            .hey-1 {
                 position: absolute;
                 left: 80px;
-                
+
             }
+
             // .hey-2{
             //     position: absolute;
             //     left: 270px;
@@ -53,18 +74,43 @@ a {
             // }
         }
     }
+
     .heading {
         font-size: 60px;
         font-family: 'Berkshire Swash', cursive;
-        color: var(--dark-pink);
+        color: var(--main-text-color);
         text-align: center;
-        margin-top: 100px;
     }
 }
+
+@media only screen and (min-width: 765px) and (max-width: 1025px) {
+    .contact-page {
+        height: 60vh;
+    }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     .contact-page {
+        .heading-container {
+            .heading-intro {
+                font-size: 16px;
+            }
+
+            .heading {
+                font-size: 45px;
+                text-align: center;
+            }
+        }
+
+        .shadow-card {
+            width: 100vw;
+            box-shadow: none;
+            margin-top: 0px;
+        }
+
         .main {
             flex-direction: column;
+
             .img-container {
                 display: none;
             }

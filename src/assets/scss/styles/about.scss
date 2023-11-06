@@ -1,44 +1,87 @@
 .about-section {
     height: 90vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    .left-container {
-        width: 50%;
-        margin-left: 50px;
-        font-size: 20px;
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 500;
-        line-height: 1.6;
-        letter-spacing: 0.3px;
-    }
-    .right-container {
-        display: flex;
-        position: relative;
-        width: 50%;
-        height: 100%;
-        .pic1 {
-            position: absolute;
-            // top: 50px;
-            left: -20px;
-        }
-        .pic2 {
-            position: absolute;
-            bottom: 50px ;
-            right: 40px;
-            width: 400px;
-            height: 400px;
-        }
 
+    .heading {
+        font-size: 65px;
+        color: var(--main-text-color);
+        font-family: 'Berkshire Swash', cursive;
+    }
+
+    .my-intro {
+        color: var(--background-color-white);
     }
 }
+
+@media only screen and (min-width: 765px) and (max-width: 1025px) {
+    .about-section {
+        height: 45vh;
+        justify-content: start;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1000px) {
+    .about-section {
+        height: 55vh;
+
+        .my-intro {
+            width: 70vw;
+        }
+
+        .tech-cards {
+            margin-top: 20px;
+
+            .tech-card {
+                width: 180px;
+                height: 200px;
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     .about-section {
         flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+
+        .heading-container {
+            .heading-intro {
+                font-size: 16px;
+            }
+
+            .main-heading {
+                font-size: 50px;
+            }
+        }
+
+        .my-intro {
+            padding: 30px;
+            padding-top: 0px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .tech-cards {
+            justify-content: center;
+            margin-top: 0px;
+
+            .tech-card {
+                height: 200px;
+                width: 200px;
+            }
+        }
+
         .left-container {
             margin: 0px;
             width: 90%;
 
         }
+
         .right-container {
             display: none;
         }

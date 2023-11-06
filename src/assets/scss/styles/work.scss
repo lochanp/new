@@ -1,3 +1,25 @@
+/* canvas- styles */
+.gradient-text {
+    background: -webkit-linear-gradient(rgb(12, 233, 241), rgb(247, 2, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-pink {
+    background: -webkit-linear-gradient(rgb(170, 138, 196), rgb(255, 2, 192));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+    text-decoration-line: underline;
+    text-decoration: underline;
+
+}
+
+.text-font {
+    font-family: 'Fugaz One', cursive;
+}
+
+
 .work-page {
     // z-index: 3;
     position: relative;
@@ -6,30 +28,47 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     .heading {
         font-size: 60px;
-        color: var(--dark-pink);
+        color: var(--main-text-color);
         font-family: 'Berkshire Swash', cursive;
     }
+
+    .gradient-text {
+        background: -webkit-linear-gradient(rgb(12, 233, 241), rgb(247, 2, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .violet-gradient {
+        background: #804dee;
+        background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+        background: -webkit-linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+    }
+
     .grid-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 50px;
         margin-top: 40px;
+
         .box {
-            background-color: var(--pinkish-grey);
-            width: 320px;
+            background-color: var(--main-text-color);
+            width: 350px;
             border-radius: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            cursor:pointer;
-            transition:1s;
+            cursor: pointer;
+            transition: 1s;
+
             .img-box {
                 padding-top: 7px;
-                width: 300px;
-                height: 300px;    
+                width: 330px;
+                height: 220px;
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -37,20 +76,94 @@
                     border-radius: 20px;
                 }
             }
+
             .title {
                 font-family: 'Roboto Condensed', sans-serif;
-                text-align: center;
                 margin-top: 8px;
                 font-size: 20px;
                 letter-spacing: 0.3px;
                 font-weight: 600;
-                color: #2e2e2e;
+                color: black;
                 padding-bottom: 8px;
             }
         }
+
         .box:hover {
-            background-color: var(--dark-pink);
-            
+            background-color: var(--pinkish-grey);
+
         }
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1000px) {
+    .tech-balls-container {
+        margin-top: 30px;
+        width: 100vw;
+
+        .tech-balls {
+            justify-content: space-between;
+            width: 70vw;
+        }
+    }
+
+    .work-page {
+        margin-top: 130px !important;
+
+        .heading {
+            font-size: 55px;
+        }
+
+        .work-containe {
+            gap: 70px !important;
+        }
+
+        .work-card {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .shadow-card {
+                width: 420px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .gradient-text-pink {
+        font-size: 14px !important;
+        text-align: center;
+        letter-spacing: normal;
+        padding: 0px 30px;
+    }
+
+    .work-page {
+        .heading-container {
+            .heading-intro {
+                font-size: 16px;
+            }
+
+            .heading {
+                padding: 0px 30px;
+                font-size: 45px;
+                text-align: center;
+            }
+        }
+
+        .work-containe {
+            margin-top: 30px;
+
+            .work-card {
+                width: 80vw;
+
+                .shadow-card {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .tech-container {
+        display: none;
     }
 }
