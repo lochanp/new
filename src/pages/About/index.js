@@ -2,7 +2,6 @@ import React from 'react';
 import ReactIcon from '../../assets/images/React-icon.png';
 import TypescriptIcon from '../../assets/images/Typescript_logo.png';
 import JavascriptIcon from '../../assets/images/JavaScript-logo.png';
-import Me2 from '../../assets/images/me2.png';
 import { motion, useElementScroll, useTransform } from 'framer-motion';
 import { Tilt } from 'react-tilt';
 
