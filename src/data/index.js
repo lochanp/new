@@ -30,6 +30,17 @@ export const workData = [
     githubLink: 'https://github.com/lochanp/react-quiz-app'
   },
   {
+    title: 'Metaverse UI',
+    imgUrl: '/metaverse-ui.png',
+    link: 'https://metaverse-ui.netlify.app',
+    description: [
+      // 'I have developed this user interface to showcase some of my animation skills.',
+      // 'This is created with framer-motion library and reactJs'
+    ],
+    githubLink: 'https://github.com/lochanp/metaverse-ui',
+    tags: ['#react', '#framerMotion', '#userInterface']
+  },
+  {
     title: 'Travel Todo',
     imgUrl: '/travel-todo.png',
     link: 'https://travel-todolist.netlify.app',
@@ -43,17 +54,6 @@ export const workData = [
     tags: ['#react', '#state', '#local', '#design'],
     githubLink: 'https://github.com/lochanp/keeper-todo'
   }
-
-  // {
-  //   title: 'Metaverse UI',
-  //   imgUrl: '/metaverse-ui.png',
-  //   link: 'https://metaverse-ui.netlify.app',
-  //   description: [
-  //     'I have developed this user interface to showcase some of my animation skills.',
-  //     'This is created with framer-motion library and reactJs'
-  //   ],
-  //   tags: ['#react', '#framer-motion', '#threejs']
-  // }
 
   // {
   //   title: 'Progvins App',

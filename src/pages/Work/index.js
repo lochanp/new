@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { workData } from '../../data';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
@@ -6,6 +6,8 @@ import gitHubIcon from '../../assets/images/GitHub-logo.png';
 
 const Work = () => {
   // const navigate = useNavigate();
+  const [dataToShow, setDataToShow] = useState(3);
+  const showMore = () => setDataToShow(dataToShow + 3);
 
   const textVariant = delay => {
     return {
@@ -59,13 +61,9 @@ const Work = () => {
       </motion.p> */}
       <div className='w-full flex justify-center'>
         <div className='mt-20 flex gap-7  flex-wrap justify-center work-containe'>
-          {workData.map((e, i) => (
+          {workData.slice(0, dataToShow).map((e, i) => (
             <a className='box work-card' rel='noreferrer' key={i} href={e.link} target='_blank'>
-              {/* <div className='img-box'>
-              <img src={e.imgUrl} alt='project pic'></img>
-            </div>
-            <p className='title'>{e.title}</p> */}
-              <motion.div variant={fadeIn('up', 'spring', i * 0.5, 2)}>
+              <motion.div className='transition-all' variant={fadeIn('up', 'spring', i * 0.5, 2)}>
                 <Tilt
                   options={{ max: 45, scale: 1, speed: 450 }}
                   className='bg-gradient-to-r shadow-card from-purple-100  to-pink-100 rounded-2xl sm:w-[360px] w-[200px]'
@@ -99,6 +97,11 @@ const Work = () => {
           ))}
         </div>
       </div>
+      {dataToShow < workData.length && (
+        <button className='gradient-text transition-all  mt-10 font-bold text-xl' onClick={showMore}>
+          Show More
+        </button>
+      )}
     </div>
   );
 };

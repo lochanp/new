@@ -29,6 +29,28 @@
     align-items: center;
     justify-content: center;
 
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .work-card {
+        animation: fadeIn 2s;
+    }
+
+    .box {
+        transition: ease-in 1s;
+    }
+
+    .shadow-card {
+        transition: all 1s;
+    }
+
     .heading {
         font-size: 60px;
         color: var(--main-text-color);
@@ -115,15 +137,18 @@
 
         .work-containe {
             gap: 70px !important;
+            transition: ease-in 1s;
         }
 
         .work-card {
             width: 100%;
             display: flex;
             justify-content: center;
+            transition: ease-in 1s;
 
             .shadow-card {
                 width: 420px !important;
+                transition: ease-in 1s;
             }
         }
     }
