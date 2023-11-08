@@ -10,7 +10,7 @@ import DarkModeToggle from '../../components/DarkModeToggle';
 const Home = props => {
   const cursor = useRef(null);
   let { scrollYProgress } = useElementScroll();
-  let y = useTransform(scrollYProgress, [0, 1], ['0%', '440%']);
+  let y = useTransform(scrollYProgress, [0, 1], ['0%', '394%']);
   const [isMobile, setMobile] = useState();
 
   useEffect(() => {
