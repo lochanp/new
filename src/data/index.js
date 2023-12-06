@@ -3,7 +3,9 @@ export const workData = [
     title: 'WildOasis Hotel Dashboard',
     imgUrl: '/wildoasis.png',
     link: 'https://hotel-dashboard-app.netlify.app/dashboard',
-    description: [],
+    description: [
+      'A hotel admin dashboard where admin can manage hotel bookings and guests in a simple way. This project is built with react and react query with supabase as a database.'
+    ],
     tags: ['#react', '#reactQuery', '#supabase'],
     githubLink: 'https://github.com/lochanp/hotel-dashboard-project'
   },
@@ -11,14 +13,29 @@ export const workData = [
     title: 'Article Summarizer',
     imgUrl: '/article-summerizer.png',
     link: 'https://article-summarizer-ai-app.netlify.app',
-    description: [''],
+    description: [
+      'A article summarization app that generates concise summaries of lengthy articles, it uses NLP algorithm api from rapidApi. Build using react and tailwind for styling.'
+    ],
     tags: ['#react', '#ai', '#reduxjs'],
     githubLink: 'https://github.com/lochanp/ai-article-summarizer'
+  },
+  {
+    title: 'Metaverse UI',
+    imgUrl: '/metaverse-ui.png',
+    link: 'https://metaverse-ui.netlify.app',
+    description: [
+      'This is a Metaverse concept landing page user interface built using reactJs, tailwind CSS, and Framer Motion that showcases my web animation skills.'
+    ],
+    githubLink: 'https://github.com/lochanp/metaverse-ui',
+    tags: ['#nextjs', '#framerMotion', '#userInterface']
   },
   {
     title: 'Movie Buzz',
     imgUrl: '/movie-bizz.png',
     link: 'https://movie-buzz-app.netlify.app',
+    description: [
+      'A app to explore new movies read the rating and reviews, Rate your favorite movies & add it to your watch list.'
+    ],
     tags: ['#react', '#omdbapi', '#listing'],
     githubLink: 'https://github.com/lochanp/movie-buzz-app'
   },
@@ -26,32 +43,29 @@ export const workData = [
     title: 'React Quiz',
     imgUrl: '/react-quix.png',
     link: 'https://react-quiz-app-main.netlify.app',
-    tags: ['#react', '#fetch', '#states'],
+    description: [
+      'A React Quiz app built using some advance react concepts like reducer to brush up some basic concepts.'
+    ],
+    tags: ['#react', '#fetch', '#reducer'],
     githubLink: 'https://github.com/lochanp/react-quiz-app'
   },
-  {
-    title: 'Metaverse UI',
-    imgUrl: '/metaverse-ui.png',
-    link: 'https://metaverse-ui.netlify.app',
-    description: [
-      // 'I have developed this user interface to showcase some of my animation skills.',
-      // 'This is created with framer-motion library and reactJs'
-    ],
-    githubLink: 'https://github.com/lochanp/metaverse-ui',
-    tags: ['#react', '#framerMotion', '#userInterface']
-  },
+
   {
     title: 'Travel Todo',
     imgUrl: '/travel-todo.png',
     link: 'https://travel-todolist.netlify.app',
     tags: ['#react', '#local', '#sortFilter'],
+    description: [
+      'A todo list concept app where we can add everything we need for a vacation it includes sort filter and delete funtionalities.'
+    ],
     githubLink: 'https://github.com/lochanp/fun-travel-todo'
   },
   {
     title: 'Keeper app',
     imgUrl: '/keeper-app.png',
     link: 'https://keeper-todo.netlify.app',
-    tags: ['#react', '#state', '#local', '#design'],
+    tags: ['#react', '#state', '#design'],
+    description: ['A basic todo list app.'],
     githubLink: 'https://github.com/lochanp/keeper-todo'
   }
 
