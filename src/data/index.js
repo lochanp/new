@@ -2,7 +2,7 @@ export const workData = [
   {
     title: 'WildOasis Hotel Dashboard',
     imgUrl: '/wildoasis.png',
-    link: 'https://hotel-dashboard-app.netlify.app/dashboard',
+    link: 'https://hotel-dashboard-app.netlify.app',
     description: [
       'A hotel admin dashboard where admin can manage hotel bookings and guests in a simple way. This project is built with react and react query with supabase as a database.'
     ],
