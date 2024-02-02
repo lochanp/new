@@ -68,10 +68,9 @@ const About = () => {
         className='my-intro mt-4 text-secondary text-[17px] max-w-3xl leading-[34px] text-center font-bold text-gray-600'
       >
         Hi, Lochan Potdar here a Frontend developer based in Mumbai, Maharashtra. I am well skilled in Typescript,
-        Javascript and expertise in ReactJS/NextJS. Recently I am getting my hands on 3D web animations and have worked
-        with libraries like Framer Motion, ThreeJS & GSAP.<br></br> I have been working as a Front-End Developer for
-        more than 2 years. With experience working on multiple real world projects and websites meanwhile I work at
-        Binaryveda a boutique Software Development company.
+        Javascript with expertise in ReactJS/NextJS. I have been working as a Frontend Developer for almost 3 years now.
+        With experience of working on multiple real world projects, websites and feeding my passion of crafting visually
+        appealing and intuitive user interfaces. <br></br>
       </motion.p>
       <p
         onClick={openPDFInNewTab}
