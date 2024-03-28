@@ -1,5 +1,6 @@
 import React from 'react';
-import Sun from '../assets/images/icons8-sun.svg';
+import Sun from '../assets/images/sun.png';
+import Moon from '../assets/images/moon.png';
 const DarkModeToggle = ({ handleChange, isChecked }) => {
   return (
     <div>
@@ -8,8 +9,9 @@ const DarkModeToggle = ({ handleChange, isChecked }) => {
         onChange={handleChange}
         onClick={handleChange}
         id='theme-icon'
-        src={isChecked ? 'https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg' : Sun}
-        alt='ERR'
+        src={isChecked ? Sun : Moon}
+        style={{ width: isChecked ? '40px' : '' }}
+        alt='moon-sun'
       />
     </div>
   );
